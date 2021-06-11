@@ -1,0 +1,30 @@
+.button {
+	padding: 0;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	-webkit-tap-highlight-color: transparent;
+	box-shadow: none;
+	cursor: pointer;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 200px;
+	height: 120px;
+	border-radius: 1px;
+	text-transform: uppercase;
+	color: rgb(255, 255, 255);
+	background: #e23284;
+	transition: 0.3s;
+}
+
+.button__title {
+	font-size: 25px;
+}
+
+.button_icon {
+	width: 18px;
+	height: 18px;
+	font-size: 18px;
+}
