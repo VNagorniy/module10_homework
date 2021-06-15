@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: rgb(226, 21, 216);
+    --hover-color: rgb(134, 247, 130);
+    --secondary-color: rgb(168, 165, 119);
+    --main-width: 600px;
+}
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+}
+.container {
+    width: 650px;
+    height: auto;
+    background: var(--secondary-color);
+    padding: 5px;
+    padding-top: 15px;
+    margin-top: 5px;
+}
+header {
+    width: var(--main-width);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.message {
+    border: var(--primary-color) 2px solid;
+    padding: 5px;
+    flex-grow: 1;
+}
+.message:focus {
+    outline: none;
+}
+.button {
+    background: #FFFFFF;
+    padding: 5px 10px;
+    border: none;
+    background: var(--primary-color);
+    margin: 0 5px;
+    transition: 0.3s;
+}
+.button:hover {
+    background: var(--hover-color);
+    /* opacity: 0.8; */
+}
+.button:active {
+    background: var(--primary-color);
+}
+.messages {
+    width: var(--main-width);
+    min-height: 200px;
+    background: #fff;
+    border: var(--primary-color) 2px solid;
+    margin: auto;
+    margin-top: 15px;
+    padding: 10px 8px;
+}
+footer {
+    padding: 5px 25px;
+    color: #333;
+    font-size: 0.7rem;
+}
+.myMessage {
+    text-align: right;
+}
+.myMessage > span {
+    border-radius: 10px 10px 0px 10px;
+}
+.oppMessage {
+    text-align: left;
+}
+.oppMessage > span {
+    border-radius: 10px 10px 10px 0px;
+}
+.messages > p > span, .messages > p > a {
+    padding: 5px;
+    border: var(--primary-color) 2px solid;
+    display: inline-block;
+    max-width: 75%;
+    margin: .2rem;
+    word-wrap: break-word;
+}
+.messages > p > .time {
+    display: inline-block;
+    border: none;
+}
